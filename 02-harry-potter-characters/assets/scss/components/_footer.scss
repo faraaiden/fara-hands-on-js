@@ -1,0 +1,15 @@
+.footer {
+  &__copyright {
+    color: var(--white);
+    opacity: .8;
+  }
+
+  &__link {
+    color: var(--orange);
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

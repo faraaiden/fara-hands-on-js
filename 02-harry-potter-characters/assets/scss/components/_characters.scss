@@ -1,0 +1,87 @@
+@use '../util' as *;
+
+.harry-potter {
+  margin-top: 50px;
+
+  @include breakpoint(large) {
+    margin-top: 60px;
+  }
+
+  &__loading {
+    color: var(--white);
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    color: var(--white);
+  }
+
+  &__search {
+    max-width: 400px;
+    margin: 40px auto 60px;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 44px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+
+    &::placeholder {
+      color: rgba(255,255,255,.4);
+    }
+
+    &:focus {
+      border-bottom: 2px solid var(--orange);
+    }
+  }
+
+  &__characters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 60px 0; 
+    
+    @include breakpoint(large) {
+      margin-top: 100px;
+      gap: 80px;
+    }
+  }
+
+  &__character {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: .3s all linear;
+    
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 80px 40px -20px;
+
+      .harry-potter__img {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  &__img {
+    filter: grayscale(80);
+  }
+
+  &__name {
+    margin: 8px 0 10px;
+  }
+
+  &__house {
+    margin-bottom: 4px;
+  }
+
+  &__status {
+    margin-bottom: 8px;
+  }
+}
