@@ -1,0 +1,59 @@
+.modal {
+  display: none;
+  background-color: #333333;
+  filter: grayscale(.6);
+  color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  padding: 90px 32px 32px;
+  text-align: left;
+  overflow-y: scroll;
+
+  &__content {
+    display: grid;
+    gap: 18px;
+    justify-items: center;
+  }
+
+  &__name,
+  &__actor {
+    text-align: center;
+  }
+
+  &__actor {
+    opacity: .7;
+    margin-top: -5px;
+  }
+
+  &__info {
+    margin-top: 24px;
+  }
+
+  &__close-btn {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--orange);
+    font-size: 26px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    transition: .3s all linear;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  &.show-modal {
+    display: block;
+  }
+}

@@ -35,3 +35,26 @@ button, input {
   outline: none;
   color: var(--white);
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+  }
+}
+
+th, td {
+  padding: 4px 12px;
+}
+
+td {
+  opacity: .8;
+  text-transform: capitalize;
+}

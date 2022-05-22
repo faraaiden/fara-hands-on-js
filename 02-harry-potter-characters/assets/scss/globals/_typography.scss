@@ -11,6 +11,19 @@ p {
   font-size: 14px;
 }
 
+.modal {
+  line-height: 1.8;
+
+  &__name {
+    font-size: 20px;
+  }
+
+  &__actor {
+    font-size: 18px;
+    font-style: italic;
+  }
+}
+
 .footer__copyright {
   font-size: 16px;
   line-height: 1.7;
