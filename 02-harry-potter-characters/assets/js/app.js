@@ -142,7 +142,6 @@ const getDetail = (e) => {
     const selectedDetail = allCharacters.filter(
       (character) => character.name === characterId
     )[0];
-    console.log(selectedDetail);
 
     createModal(selectedDetail);
   }
