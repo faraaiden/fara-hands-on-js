@@ -84,6 +84,10 @@ const createModal = (character) => {
             <td>${house ? house : '-'}</td>
           </tr>
           <tr>
+            <th>Status</th>
+            <td>${hogwartsStudent ? 'Hogwarts Student' : 'Hogwarts Staff'}</td>
+          </tr>
+          <tr>
             <th>Gender</th>
             <td>${gender}</td>
           </tr>
@@ -99,7 +103,9 @@ const createModal = (character) => {
             <th>Wand</th>
             <td>${
               wand.wood
-                ? `Wood (${wand.wood}), core (${wand.core}), length (${wand.length})`
+                ? `Wood (${wand.wood}), core (${wand.core}), length (${
+                    wand.length ? wand.length : '-'
+                  })`
                 : '-'
             }</td>
           </tr>
@@ -118,10 +124,6 @@ const createModal = (character) => {
           <tr>
             <th>Patronus</th>
             <td>${patronus ? patronus : '-'}</td>
-          </tr>
-          <tr>
-            <th>Status</th>
-            <td>${hogwartsStudent ? 'Hogwarts Student' : 'Hogwarts Staff'}</td>
           </tr>
         </table>
       </div>
