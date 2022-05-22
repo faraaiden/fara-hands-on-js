@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: var(--font-oswald);
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: var(--white);
+
+  &:hover {
+    text-decoration: none;
+    opacity: .8;
+  }
+}

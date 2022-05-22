@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Studio Ghibli Movies</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo">
+          <span class="logo__text">STUDIO GHIBLI</span>
+          <img
+            class="logo__img"
+            src="./assets/img/studio-ghibli-logo-by-beausaur.png"
+            alt="Studio Ghibli Logo by Beausaur"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__heading">Movies Database</h1>
+          <p class="hero__subheading">
+            Get more information about Studio&nbsp;Ghibli's&nbsp;movies.
+          </p>
+          <form class="hero__form">
+            <input
+              type="text"
+              name="movie-title"
+              id="movie-title"
+              class="hero__form-input"
+              placeholder="Spirited Away"
+              required
+            />
+            <button class="hero__form-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- MOVIES -->
+      <section class="movies">
+        <div class="container movies__container">
+          <p>Loading...</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__copyright">
+          Copyright &copy; 2022 -
+          <a href="https://www.github.com/faraaiden">faraaiden</a>. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

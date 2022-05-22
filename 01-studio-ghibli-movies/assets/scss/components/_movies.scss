@@ -1,0 +1,10 @@
+.movies {
+  &__container {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}

@@ -1,0 +1,13 @@
+@use '../util' as *;
+
+:root {
+  --font-size-logo: 20px;
+  --font-size-h1: 36px;
+  --font-size-reg: 18px;
+  --font-size-sm: 16px;
+
+  @include breakpoint(medium) {
+    --font-size-h1: 50px;
+    --font-size-reg: 20px;
+  }
+}

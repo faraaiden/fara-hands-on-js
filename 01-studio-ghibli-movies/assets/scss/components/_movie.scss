@@ -1,0 +1,19 @@
+.movie {
+  cursor: pointer;
+  transition: all .3s linear;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__img {
+    height: 310px;
+    max-width: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+}

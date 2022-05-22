@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__img {
+    width: 60px;
+  }
+}
+
+// logo image Studio Gibli by https://www.deviantart.com/beausaur/art/Studio-Ghibli-Logo-Pixel-Art-502579144
